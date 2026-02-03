@@ -1,0 +1,311 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "merhaba",
+        "selam",
+        "günaydın",
+        "iyi günler",
+        "hey",
+        "nasılsın",
+        "naber",
+        "selamlar"
+      ],
+      "responses": [
+        "Merhaba! Size nasıl yardımcı olabilirim?",
+        "Selam! Bugün ne yapmamı istersiniz?",
+        "İyi günler! Sizin için buradayım."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "görüşürüz",
+        "hoşçakal",
+        "güle güle",
+        "bay bay",
+        "çıkış",
+        "kapat",
+        "bitir"
+      ],
+      "responses": [
+        "Görüşmek üzere! İyi günler.",
+        "Hoşçakalın, tekrar görüşmek dileğiyle!",
+        "Güle güle! Size yardımcı olabildiysem ne mutlu bana."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "saat kaç",
+        "şu an saat kaç",
+        "bana saati söyle",
+        "saati öğren",
+        "şimdiki saat",
+        "kaç oldu",
+        "vakit kaç"
+      ],
+      "responses": [
+        "Şu an saat {time}"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "bugün ayın kaçı",
+        "tarih",
+        "bugünün tarihi",
+        "hangi gün",
+        "bugün ne günü",
+        "kaçıncı gün"
+      ],
+      "responses": [
+        "Bugün {date}"
+      ]
+    },
+    {
+      "tag": "calculator",
+      "patterns": [
+        "hesapla",
+        "topla",
+        "çıkar",
+        "çarp",
+        "böl",
+        "işlem yap",
+        "matematik",
+        "hesap",
+        "kaç eder",
+        "toplam ne olur"
+      ],
+      "responses": [
+        "Sonuç: {result}"
+      ]
+    },
+    {
+      "tag": "note_add",
+      "patterns": [
+        "not al",
+        "not tut",
+        "kaydet",
+        "yaz",
+        "bunu yaz",
+        "not ekle",
+        "yazdır bunu",
+        "hatırla"
+      ],
+      "responses": [
+        "Notunuz kaydedildi.",
+        "Tamam, yazdım.",
+        "Not alındı!"
+      ]
+    },
+    {
+      "tag": "note_list",
+      "patterns": [
+        "notlarımı oku",
+        "notlarım neler",
+        "kayıtlı notlar",
+        "ne yazmıştım",
+        "notları listele",
+        "notlarımı göster",
+        "kayıtlarım"
+      ],
+      "responses": [
+        "İşte notlarınız: {notes}"
+      ]
+    },
+    {
+      "tag": "note_delete",
+      "patterns": [
+        "notu sil",
+        "notları temizle",
+        "notları sil",
+        "kayıtları sil",
+        "hepsini sil"
+      ],
+      "responses": [
+        "Notlarınız silindi.",
+        "Tüm notlar temizlendi."
+      ]
+    },
+    {
+      "tag": "reminder_add",
+      "patterns": [
+        "hatırlat",
+        "hatırlatıcı ekle",
+        "bana hatırlat",
+        "alarm kur",
+        "uyar",
+        "bildir",
+        "hatırlatma ayarla"
+      ],
+      "responses": [
+        "Hatırlatıcı eklendi!",
+        "Tamam, size hatırlatacağım."
+      ]
+    },
+    {
+      "tag": "reminder_list",
+      "patterns": [
+        "hatırlatıcılar",
+        "hatırlatıcılarım neler",
+        "ne hatırlatacaktın",
+        "hatırlatma listesi",
+        "alarmlar"
+      ],
+      "responses": [
+        "Aktif hatırlatıcılarınız: {reminders}"
+      ]
+    },
+    {
+      "tag": "study_advice",
+      "patterns": [
+        "ders çalış",
+        "nasıl çalışmalıyım",
+        "çalışma önerisi",
+        "verimli çalışma",
+        "sınava nasıl hazırlanmalıyım",
+        "çalışma planı",
+        "ders programı",
+        "motivasyon",
+        "odaklan",
+        "konsantre ol"
+      ],
+      "responses": [
+        "Pomodoro tekniğini deneyebilirsiniz: 25 dakika çalış, 5 dakika mola. 4 tur sonra 15-30 dakika uzun mola verin.",
+        "Çalışma önerim: Önce konuyu genel olarak okuyun, sonra detaylara inin. Not alırken aktif öğrenme tekniklerini kullanın.",
+        "Düzenli çalışma en iyisidir. Her gün aynı saatlerde kısa süreli çalışmalar, yoğun tek seanstan daha etkilidir."
+      ]
+    },
+    {
+      "tag": "study_timer",
+      "patterns": [
+        "çalışma zamanı başlat",
+        "pomodoro başlat",
+        "zamanlayıcı kur",
+        "timer başlat",
+        "çalışma sürem"
+      ],
+      "responses": [
+        "Çalışma zamanınız başladı! {duration} dakika sonra size haber vereceğim."
+      ]
+    },
+    {
+      "tag": "study_plan",
+      "patterns": [
+        "çalışma planı oluştur",
+        "program yap",
+        "planlama yap",
+        "takvim oluştur",
+        "ders programı yap"
+      ],
+      "responses": [
+        "Size özel bir çalışma planı oluşturalım. Hangi derslere öncelik vermek istersiniz?",
+        "Çalışma planı için önce hedeflerinizi belirleyelim. Sınav tarihiniz ne zaman?"
+      ]
+    },
+    {
+      "tag": "motivate",
+      "patterns": [
+        "motivasyon ver",
+        "motive et",
+        "cesaretlendir",
+        "pes ettim",
+        "yapamıyorum",
+        "zorlanıyorum",
+        "destek ver"
+      ],
+      "responses": [
+        "Her büyük başarı küçük adımlarla başlar. Bugün bir adım daha atın!",
+        "Başarısızlık sadece henüz başarılı olmamaktır. Devam edin, yapabilirsiniz!",
+        "Zorluklarla karşılaşmak büyüdüğünüzün kanıtıdır. Siz bu işin üstesinden gelirsiniz!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "hava durumu",
+        "hava nasıl",
+        "dışarıda hava",
+        "yağmur yağıyor mu",
+        "hava sıcaklığı"
+      ],
+      "responses": [
+        "Üzgünüm, hava durumu bilgisine erişimim yok. İnternet bağlantılı hava uygulamalarını kullanabilirsiniz."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "fıkra anlat",
+        "şaka yap",
+        "espri",
+        "güldür beni",
+        "komik bir şey söyle"
+      ],
+      "responses": [
+        "Neden bilgisayarlar soğuk algınlığına yakalanmaz? Çünkü hep Windows açık tutarlar!",
+        "İki yapay zeka karşılaşmış. Biri diğerine: 'Senin algoritmanda bir bug var.' Diğeri: 'Yok, o feature!'",
+        "Programcı kahveye girer. Garsona der ki: 'Bir kahve, ama şekersiz.' Garson: 'Üzgünüm, şekerimiz bitti.' Programcı: 'O zaman Boolean bir kahve ver!'"
+      ]
+    },
+    {
+      "tag": "search",
+      "patterns": [
+        "ara",
+        "bul",
+        "araştır",
+        "google'da ara",
+        "internetten bul"
+      ],
+      "responses": [
+        "Üzgünüm, web araması yapamıyorum. Ancak kaydettiğiniz notlarda arama yapabilirim."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "yardım",
+        "neler yapabilirsin",
+        "ne yaparsın",
+        "komutlar",
+        "özellikler",
+        "nasıl kullanılır"
+      ],
+      "responses": [
+        "Size yardımcı olabileceğim konular: Saat/tarih bilgisi, hesaplama, not alma, hatırlatıcı ekleme, çalışma önerileri ve daha fazlası. 'Komutlar neler' diyerek tam listeyi görebilirsiniz."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "teşekkürler",
+        "sağ ol",
+        "teşekkür ederim",
+        "çok sağ ol",
+        "eyvallah",
+        "sağolasın"
+      ],
+      "responses": [
+        "Rica ederim!",
+        "Ne demek, her zaman!",
+        "Yardımcı olabildiysem ne mutlu bana!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "adın ne",
+        "sen kimsin",
+        "kim olduğunu söyle",
+        "tanış",
+        "kendini tanıt"
+      ],
+      "responses": [
+        "Ben Türkçe sesli asistanınızım. Size yardımcı olmak için buradayım!",
+        "Benim adım henüz yok, ama siz bana istediğiniz ismi verebilirsiniz!"
+      ]
+    }
+  ]
+}

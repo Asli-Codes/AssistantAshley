@@ -1,0 +1,30 @@
+# Ses İşleme ve Tanıma
+openai-whisper>=20231117
+sounddevice>=0.4.7
+soundfile>=0.12.1
+numpy>=1.26.0,<2.0.0  # Python 3.13 uyumlu
+
+# Ses Formatları
+cffi>=1.16.0  # soundfile için gerekli
+
+# Metin İşleme ve NLP
+scikit-learn>=1.4.0  # Python 3.13 desteği
+nltk>=3.8.1
+pandas>=2.1.4
+
+# Metin-Ses Dönüşümü
+pyttsx3>=2.90
+
+
+gTTS>=2.5.0  # Google TTS - internet gerektirir
+
+# Web Arayüzü
+streamlit>=1.30.0  # Python 3.13 uyumlu
+watchdog>=4.0.0  # Streamlit için file watcher
+
+# Yardımcı Kütüphaneler
+python-dateutil>=2.8.2
+pytz>=2024.1
+
+# Sistem Bağımlılıkları
+pywin32>=306; sys_platform == 'win32'
